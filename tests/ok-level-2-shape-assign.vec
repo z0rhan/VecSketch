@@ -1,0 +1,5 @@
+shape null = [0,0]
+
+null := [0,0] - [1,1]
+
+print null

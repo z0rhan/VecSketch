@@ -1,0 +1,22 @@
+
+number aa = 3
+number ii = 2
+
+while ii < 128*2 is
+  print ii
+  ii := ii * 2
+endwhile
+
+while aa < 20 is
+    while aa < 10 is
+        while aa < 4 is
+            aa := aa + 1
+            print aa & "inner"
+        endwhile
+        print aa & "middle"
+        aa := aa + 1
+    endwhile
+    print aa & "outer"
+    aa := aa * 2
+endwhile
+print aa & "out"

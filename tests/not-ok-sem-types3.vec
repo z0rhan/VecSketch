@@ -1,0 +1,6 @@
+define FUNCTION{ ok : number; ok2nd : number } return double is
+ ok * ok2nd
+end
+
+print FUNCTION(1,2)
+

@@ -1,0 +1,12 @@
+define FUNC1{} return number
+is
+    FUNC2()
+end
+
+define FUNC2{} return number
+is
+    FUNC1()
+end
+
+print FUNC1()
+

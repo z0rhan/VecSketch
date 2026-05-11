@@ -1,0 +1,16 @@
+define Sum[ nn : number ]
+    number total = 0
+    number ii = 1
+is
+    while (ii - 1) < nn is
+        total := total + ii
+        ii := ii + 1
+    endwhile
+    print total
+end
+
+print "SUM 0"    Sum( 0 )
+print "SUM 1"    Sum( 1 )
+print "SUM 4"    Sum( 4 )
+print "SUM 55"   Sum( 55 )
+

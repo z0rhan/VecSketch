@@ -1,0 +1,6 @@
+define FUNCTION{ ok : number; notok : something } return number is
+ ok / notok
+end
+
+print FUNCTION( 3/7, 5*2 )
+

@@ -1,0 +1,7 @@
+define FUNCTION{ param : number; param : shape } return shape
+is
+  param.x
+end
+
+print FUNCTION( 945, 3456 )
+

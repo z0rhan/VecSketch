@@ -1,0 +1,10 @@
+number pi = 22/7
+
+define Abc[ ok : number ]
+is
+  print ok
+end
+
+Abc( pi )
+print ok /% local should not be visible here %/
+

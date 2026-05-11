@@ -1,0 +1,19 @@
+shape bbox = [0,0]-[10,0]-[10,10]-[0,10]-[0,0]
+
+shape square = [4,2]-[6,2]-[6,4]-[4,4]-[4,2]
+
+number centx = square.x
+number centy = square.y
+shape in_origin = square -> [ -centx, -centy ]
+shape rotated = in_origin / 30
+shape result = rotated -> [ centx, centy ]
+
+
+draw +bbox (200,200,200)
+draw square + result (255,0,0)
+draw -bbox * (1/2) (0,255,0)
+draw (result - +square) -> [3,3] (255,0,255)
+draw (square * result) -> [3,3]
+
+print "square in bbox (yes):" & square < +bbox
+print "squares are the same (no):" & square = result

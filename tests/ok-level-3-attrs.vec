@@ -1,0 +1,9 @@
+shape aa = [7,6]
+shape bb = [-3,-9]
+print aa
+print aa.x
+print aa.y
+aa := bb+aa
+print aa
+print aa.x
+print aa.y

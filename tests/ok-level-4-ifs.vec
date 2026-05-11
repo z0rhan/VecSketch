@@ -1,0 +1,23 @@
+number value = -5
+
+if value < 0 then
+    print "negative"
+endif
+
+if 0 < value then
+    print "positive"
+else
+    print "still negative"
+endif
+
+if value /= 0 then
+    if value /= -1 then
+        if value /= -2 then
+            if value = -5 then
+                print "minus 5"
+            endif
+        endif
+    else
+        print "something else" & -1
+    endif
+endif

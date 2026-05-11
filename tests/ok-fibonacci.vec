@@ -1,0 +1,24 @@
+define Fibonacci[ limit : number ]
+    number aa = 0
+    number bb = 1
+    number result = 0
+    number ii = 2
+is
+    if      limit = 0 then print 0 
+    else if limit = 1 then print 1 
+    else
+        while ii < limit is
+            result := aa + bb
+            print result
+            aa := bb
+            bb := result
+            ii := ii + 1
+        endwhile
+    endif endif
+end
+
+print "FIB 0"       Fibonacci( 0 )
+print "FIB 1"       Fibonacci( 1 )
+print "FIB 4"       Fibonacci( 4 )
+print "FIB 7"       Fibonacci( 7 )
+

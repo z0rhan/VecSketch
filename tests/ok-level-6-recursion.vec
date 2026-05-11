@@ -1,0 +1,54 @@
+number ret = 99
+
+define Factorial [ nn : number ]
+number ret = 0
+number tmp = 0
+is
+  if nn = 0 then
+      ret := 1
+  else
+      tmp := Factorial( nn - 1 )
+      ret := nn * tmp
+  endif
+  return ret
+end
+
+number t = 0 
+
+define Fibonacci[ limit : number ]
+    number a = 0
+    number b = 1
+    number t = 0
+    number ii = 2
+is
+    if      limit = 0 then print 0 
+    else if limit = 1 then print 1 
+    else
+        while ii < limit+1 is
+            t := a + b
+            a := b
+            b := t
+            ii := ii + 1
+        endwhile
+        print t
+    endif endif
+end
+
+t := Factorial(0)
+print "factorial 0 =" & t
+t := Factorial(1)
+print "factorial 1 =" & t
+t := Factorial(2)
+print "factorial 2 =" & t
+t := Factorial(3)
+print "factorial 3 =" & t
+t := Factorial(4)
+print "factorial 4 =" & t
+t := Factorial(5)
+print "factorial 5 =" & t
+
+print "FIB 0"       Fibonacci( 0 )
+print "FIB 1"       Fibonacci( 1 )
+print "FIB 4"       Fibonacci( 4 )
+print "FIB 7"       Fibonacci( 7 )
+

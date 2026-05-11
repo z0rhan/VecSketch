@@ -1,0 +1,15 @@
+define DEC{ num : number} return number is
+    num - 1
+end
+
+define Counter[ initial : number ] is
+while 0 < initial is
+    print initial & "'units'"
+    initial := DEC( initial )
+endwhile
+print "Time's up!!!"
+end
+
+Counter( 11 )
+
+

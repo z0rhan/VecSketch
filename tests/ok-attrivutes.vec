@@ -1,0 +1,8 @@
+
+shape s = [0,0]-[1,1]
+
+number aa = s.x
+number bb = s.y - 3
+
+print s.x - s.y
+

@@ -1,0 +1,16 @@
+number ab = 10
+
+define Dec[ num : number ] 
+is
+  num := num - 1
+  print "num" & num
+end
+
+number cd = 20
+define Inc[ rum : number ] is
+  rum := rum + 1
+  print "ab" & ab & "rum" & rum
+end
+
+Dec( ab )
+Inc( cd )

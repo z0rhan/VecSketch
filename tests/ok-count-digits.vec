@@ -1,0 +1,13 @@
+define Count_digits[ num : number]
+    number count = 0
+is
+ while 1 < num is
+    count := count + 1
+    num := num / 10
+ endwhile
+ print count
+end
+
+print "COUNT 5"    Count_digits( 5 )
+print "COUNT 59"   Count_digits( 59 )
+print "COUNT 115"  Count_digits( 115 )

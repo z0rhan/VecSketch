@@ -1,0 +1,5 @@
+number abcdefghijklmnopqrst = 1
+
+abcdefghijklmnopqrst := abcdefghijklmnopqrst + 110
+
+print abcdefghijklmnopqrst

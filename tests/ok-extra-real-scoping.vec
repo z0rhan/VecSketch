@@ -1,0 +1,15 @@
+number pi = 22/7
+shape point = [0,0]
+
+define Abc[ ok : number ]
+is
+  print ok
+end
+
+define Def[ ok : shape ]
+is
+  print ok
+end
+
+Abc( pi )
+Def( point )

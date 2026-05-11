@@ -1,0 +1,2 @@
+number ff = 1/4
+print ff.kokonaisluku /% wrong attribute name %/

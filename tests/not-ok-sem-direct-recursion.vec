@@ -1,0 +1,6 @@
+define FUNCTION{ ok : number } return shape is
+ FUNCTION(5) - 7  /% direct recursion not allowed %/
+end
+
+print FUNCTION(1)
+

@@ -1,0 +1,5 @@
+number int = 3
+shape kuvio = [3,4]-[12,4]-[-3,45]-[33,23534]
+
+print "int" & int
+print "kuvio" & kuvio

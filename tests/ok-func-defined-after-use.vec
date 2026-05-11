@@ -1,0 +1,10 @@
+
+define FIRST{} return number is
+  SECOND( 3 ) + 7
+end
+
+define SECOND{ param : number } return number is
+  param
+end
+
+print FIRST()

@@ -1,0 +1,5 @@
+define FUNCTION{} return number is 42 end
+define FUNCTION{} return number is 43 end
+
+print 0
+

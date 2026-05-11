@@ -1,0 +1,9 @@
+shape bbox = [0,0]-[10,0]-[10,10]-[0,10]-[0,0]
+shape line = [3,3]-[7,8]
+
+draw bbox
+draw line (255,0,0)
+pause
+clear
+draw line
+pause

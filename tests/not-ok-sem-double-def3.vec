@@ -1,0 +1,8 @@
+define FUNCTION{ param : number } return number
+  number param = 3 /% redefinition %/
+is
+  param - 3
+end
+
+print FUNCTION( 9453456 )
+

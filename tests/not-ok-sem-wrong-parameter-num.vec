@@ -1,0 +1,8 @@
+define SOME{ first : number; second : shape } return shape
+number retval = first + second.x
+is
+ retval
+end
+
+print SOME( 42 ) /% should be two actuals %/
+

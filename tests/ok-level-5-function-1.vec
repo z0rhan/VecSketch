@@ -1,0 +1,6 @@
+define INC{ num : number } return number
+is
+  num + 1
+end
+
+print INC( 10 ) & INC( -10 )

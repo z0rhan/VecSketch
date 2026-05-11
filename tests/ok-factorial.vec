@@ -1,0 +1,27 @@
+define Factorial [ nn : number ]
+number ret = 0
+number tmp = 0
+is
+  if nn = 0 then
+      ret := 1
+  else
+      tmp := Factorial( nn - 1 )
+      ret := nn * tmp
+  endif
+  return ret
+end
+
+number t = 0
+
+t := Factorial(0)
+print "factorial 0 =" & t
+t := Factorial(1)
+print "factorial 1 =" & t
+t := Factorial(2)
+print "factorial 2 =" & t
+t := Factorial(3)
+print "factorial 3 =" & t
+t := Factorial(5)
+print "factorial 5 =" & t
+
+

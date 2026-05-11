@@ -1,0 +1,8 @@
+number i = 0
+
+while i < 10 is
+    i := i + 1
+    if i/2 = +(i/2) then
+        print "Even" & i & i=8
+    endif
+endwhile

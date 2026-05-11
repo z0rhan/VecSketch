@@ -1,0 +1,9 @@
+define Abc[ ok : number ] is
+  print ok
+end
+
+number xyzzy = 0
+
+/% rvalue call not ok when return not precent in proc %/
+xyzzy := Abc( 1 )
+

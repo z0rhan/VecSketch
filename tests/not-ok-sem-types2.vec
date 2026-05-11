@@ -1,0 +1,6 @@
+define Abc[ ok : number; notok : float ] is
+  print ok & notok
+end
+
+Abc( 1, 1/2 )
+
