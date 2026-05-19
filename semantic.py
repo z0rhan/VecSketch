@@ -356,7 +356,7 @@ def while_statement_check(node, semdata):
         for statement in statement_list:
             if statement.nodetype == "procedure_call":
                 identifier = statement.child_identifier
-                return_expression = statement.child_return_expression
+                return_expression = semdata.symbol_table[identifier.value].return_expression
                 if return_expression is not None:
                     return f"Procedure <{identifier}> has return expression\n\
                              Procedure with return expression must be assigned"
